@@ -1,0 +1,229 @@
+body {
+  background: #222;
+  font-family: Calibri, Arial, sans-serif;
+}
+
+.resume {
+  background: #fff;
+  padding: 20px;
+  margin: 50px auto;
+  width: 70%;
+  border-radius: 10px;
+  color: #222;
+  z-index: 0;
+}
+
+.sectHead {
+  font-size: 30px;
+  margin-top: 15px;
+  border-bottom: 1px solid #222;
+}
+.sectHead:first-letter {
+  font-weight: bold;
+  font-size: 35px;
+  font-style: italic;
+}
+
+/* FORMS */
+
+form {
+  margin-bottom: 20px;
+  display: block;
+}
+form > div {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-around;
+}
+form > div > label {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  color: #666;
+  cursor: text;
+  transition: all 0.5s;
+}
+
+input,
+textarea {
+  display: flex;
+  width: 98%;
+  margin-bottom: 10px;
+  background: #fff;
+  padding: 8px;
+  outline: none;
+  border: 1px solid #999;
+  border-radius: 5px;
+  overflow: hidden;
+}
+input:required:focus,
+textarea:required:focus {
+  border: 1px solid #c47979;
+}
+input:focus + label,
+textarea:focus + label {
+  top: 2px;
+  font-size: 10px;
+}
+input:invalid {
+  color: #999;
+}
+input:valid + label,
+textarea:valid + label {
+  color: transparent;
+}
+input[type="date"] + label {
+  top: 2px;
+  font-size: 10px;
+  color: #333;
+}
+
+button {
+  background: #ccc;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 5px;
+  max-width: max-content;
+}
+button:hover {
+  color: #000;
+  background: #eee;
+}
+
+.submitEduButton,
+.submitExpButton {
+  display: block;
+}
+#editEduButton,
+#editExpButton {
+  display: none;
+}
+.addBtn,
+.editHead {
+  display: none;
+}
+
+/*
+.break {
+  margin: 10px auto;
+  width: 90%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(0,0,0,0.8), transparent);
+}
+*/
+
+/* HEADER */
+
+#name {
+  font-size: 45px;
+  text-align: left;
+  clear: both;
+}
+
+#headerSide {
+  float: right;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10px;
+}
+#email {
+  display: block;
+}
+
+#desRole {
+  font-weight: bold;
+  display: block;
+  font-size: 20px;
+  margin: 10px 0 5px;
+  font-style: italic;
+}
+
+#blurb {
+  text-align: justify;
+  line-height: 15px;
+  display: block;
+  font-size: 13px;
+  margin: 0 15px 0 10px;
+  padding-left: 5px;
+  border-left: 2px solid #222;
+}
+
+/* EDUCATION/EXPERIENCE */
+
+.block {
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #222 0% 1%, transparent 1%);
+}
+
+#degree,
+#role {
+  font-size: 25px;
+  display: block;
+}
+#school,
+#job {
+  font-weight: bold;
+  display: inline-block;
+  font-size: 20px;
+}
+#dates,
+#jobDates {
+  font-size: 15px;
+  font-style: italic;
+  padding-top: 10px;
+  position: absolute;
+  left: 75%;
+}
+#dates span,
+#jobDates span {
+  display: block;
+}
+#desc {
+  text-align: justify;
+  width: 95%;
+  max-height: 150px;
+  overflow-y: auto;
+  font-size: 13px;
+  padding: 0 5px;
+  border-left: 2px solid #222;
+}
+
+/* FontAwesome */
+
+.faGithub {
+  display: block;
+  font-size: 24px;
+  color: #444;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+.faGithub:hover {
+  color: #666;
+}
+
+.faAtom {
+  font-size: 250px;
+  color: #444;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  z-index: -1;
+}
+
+
+
+
+/*
+style the forms decently
+MAYBE overlay? maybe not
+style placement and backgrounds
+*/
