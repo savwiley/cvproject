@@ -51,7 +51,7 @@ textarea {
   width: 98%;
   margin-bottom: 10px;
   background: #fff;
-  padding: 8px;
+  padding: 10px 8px 8px;
   outline: none;
   border: 1px solid #999;
   border-radius: 5px;
@@ -72,6 +72,9 @@ input:invalid {
 input:valid + label,
 textarea:valid + label {
   color: transparent;
+}
+input[type="date"] {
+  cursor: text;
 }
 input[type="date"] + label {
   top: 2px;
@@ -101,22 +104,11 @@ button:hover {
   display: block;
 }
 #editEduButton,
-#editExpButton {
-  display: none;
-}
+#editExpButton,
 .addBtn,
 .editHead {
   display: none;
 }
-
-/*
-.break {
-  margin: 10px auto;
-  width: 90%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, rgba(0,0,0,0.8), transparent);
-}
-*/
 
 /* HEADER */
 
@@ -218,12 +210,3 @@ button:hover {
   top: 5px;
   z-index: -1;
 }
-
-
-
-
-/*
-style the forms decently
-MAYBE overlay? maybe not
-style placement and backgrounds
-*/
