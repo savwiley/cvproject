@@ -6,10 +6,7 @@ Preview the site [here](https://savwiley.github.io/cvproject/)!
 
 ## Known Problems/To-Dos
 
-- Fix spacing between headers & inputs
-- Distribute `App.js` code to components
 - Add socials, address, etc. to `Header.js`
-- Add print and/or preview options
 - Create a more professional style
 
 ## Credits
