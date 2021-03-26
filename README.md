@@ -8,6 +8,7 @@ Preview the site [here](https://savwiley.github.io/cvproject/)!
 
 - Add socials, address, etc. to `Header.js`
 - Create a more professional style
+- Add localStorage
 
 ## Credits
 
